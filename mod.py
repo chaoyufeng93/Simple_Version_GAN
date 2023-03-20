@@ -43,7 +43,8 @@ class GAN_Generator(torch.nn.Module):
     x = x.reshape(x.shape[0],1,28,28)
 
     return x
-    
+  
+# input: (batch_size, 1, 28, 28)
 class GAN_Discrim(torch.nn.Module):
   def __init__(self, input_dim, linear_dim):
     super(GAN_Discrim, self).__init__()
